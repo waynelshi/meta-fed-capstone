@@ -11,47 +11,39 @@
   font-size: 15px;
   margin-top: 0;
   font-family: 'Karla';
-}
-
-.container{
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-header{
-  display:inline-flex;
+.header{
+  display:flex;
   width: 1440px;
-  height:135px;
+  height:100px;
   background-color: #ffffff;
 }
 
-
-header > img{
-  width: 200px;
-  margin-left: 20%;
-
+nav > img{
+  width:200px;
+  position:relative;
+  right:30px;
+  top:20px;
 }
 
-nav{
-  margin-top: 60px;
+nav {
+  position: relative;
+  left:23%;
 }
 
-nav ul > li {
-   display: inline-flex;
-   list-style-type: none;
-}
-
-nav > ul > li > a{
-  margin-left:30px;
+.nav-item{
+  margin-left: 20px;
   text-decoration: none;
   font-family: 'Karla';
   font-size: 1rem;
   color: black;
 }
 
-nav > ul > li > a:hover{
+.nav-item:hover{
   text-shadow: 2px 2px var(--primary-y);
 }
 
@@ -72,11 +64,16 @@ button{
   border-radius: 16px;
 }
 
+main{
+  margin-top: 50px;
+  width: 1440px;
+}
+
 #hero-section{
   display: grid;
   grid-template-areas: "intro-text  intro-image";
   height: 480px;
-  width: 1440px;
+  width: 100%;
   background-color: var(--primary-g);
 }
 
@@ -114,14 +111,14 @@ button{
 .intro-image > img {
   width: 400px;
   border-radius: 16px;
-  margin-top: 60px;
-  margin-right:180px;
+  position:relative;
+  top: 60px;
+  right:75px;
 }
-
 
 #highlight-section{
   height:690px;
-  width: 1440px;
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -185,17 +182,17 @@ button{
 .dish :nth-child(4) > img{
   width:25px;
   margin-left: 10px;
-
 }
 
 #testimonial-section{
   height:560px;
-  width: 1440px;
+  width: 100%;
   background-color: var(--secondary-w);
   padding:10px 0;
+  text-align: center;
 }
 
-.testmonials{
+.testimonials{
   display: flex;
   align-items:center;
   justify-content: center;
@@ -236,7 +233,7 @@ button{
 
 #about-section{
   height:560px;
-  width: 1440px;
+  width:100%;
   background-color: #ffffff;
   display: flex;
   text-align: left;
@@ -280,7 +277,75 @@ button{
   margin-top:100px;
 }
 
+.reservation{
+  margin-top: 50px;
+}
+
+#reservation-section{
+  width: 1440px;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #EDEFEE;
+  margin-top: 0;
+}
+
+fieldset{
+  width:80%;
+  margin:50px 200px;
+  border:0px;
+  color:var(--primary-g);
+}
+
+label{
+  font-weight: 600;
+}
+
+input, select{
+  height:40px;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:1px solid var(--primary-g);
+  margin-top:5px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+textarea::placeholder, input::placeholder, option{
+  color:var(--secondary-r);
+}
+
+textarea{
+  width: 1040px;
+  height:400px;
+  margin-top:5px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.field{
+  display:inline-flex;
+  flex-direction: column;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.name, .phone, .email, .date> input, select{
+  width:500px;
+}
+
+
+.submit-button{
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 100px;
+}
+
 footer{
+  justify-content: center;
   height:450px;
   width: 1440px;
   background-color: var(--primary-g);
@@ -310,7 +375,6 @@ footer{
   position:relative;
   left: -40px;
   line-height: 2rem;
-  
 }
 
 .link > ul > li > a{

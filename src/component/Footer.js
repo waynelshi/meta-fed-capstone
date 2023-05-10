@@ -1,8 +1,8 @@
 import flogo from './../image/footer-logo.png'
 
-function Footer() {
+const Footer = () => {
     return(
-        <div className="container">
+        <div>
             <footer>
                 <div className="footer-links">
                     <div className="footer-logo">
